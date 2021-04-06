@@ -1,0 +1,1059 @@
+{
+    "name": "We ♥ NP",
+    "ticks": 500,
+    "parameters": {
+        "coughThreshold": 20,
+        "breathThreshold": 150,
+        "accelerationDivisor": 20,
+        "recoveryTime": 140,
+        "infectionRadius": 5,
+        "incubationTime": 3
+    },
+    "gridSize": {
+        "x": 100,
+        "y": 50
+    },
+    "partition": {
+        "x": [25, 50, 75],
+        "y": [20, 40]
+    },
+    "obstacles": [
+        {
+            "topLeft": {
+                "x": 5,
+                "y": 10
+            },
+            "size": {
+                "x": 4,
+                "y": 30
+            }
+        },
+        {
+            "topLeft": {
+                "x": 9,
+                "y": 10
+            },
+            "size": {
+                "x": 1,
+                "y": 9
+            }
+        },
+        {
+            "topLeft": {
+                "x": 10,
+                "y": 12
+            },
+            "size": {
+                "x": 1,
+                "y": 9
+            }
+        },
+        {
+            "topLeft": {
+                "x": 11,
+                "y": 13
+            },
+            "size": {
+                "x": 1,
+                "y": 9
+            }
+        },
+        {
+            "topLeft": {
+                "x": 12,
+                "y": 15
+            },
+            "size": {
+                "x": 1,
+                "y": 9
+            }
+        },
+        {
+            "topLeft": {
+                "x": 13,
+                "y": 16
+            },
+            "size": {
+                "x": 1,
+                "y": 9
+            }
+        },
+        {
+            "topLeft": {
+                "x": 14,
+                "y": 18
+            },
+            "size": {
+                "x": 1,
+                "y": 9
+            }
+        },
+        {
+            "topLeft": {
+                "x": 15,
+                "y": 19
+            },
+            "size": {
+                "x": 1,
+                "y": 9
+            }
+        },
+        {
+            "topLeft": {
+                "x": 16,
+                "y": 20
+            },
+            "size": {
+                "x": 1,
+                "y": 9
+            }
+        },
+        {
+            "topLeft": {
+                "x": 17,
+                "y": 22
+            },
+            "size": {
+                "x": 1,
+                "y": 9
+            }
+        },
+        {
+            "topLeft": {
+                "x": 18,
+                "y": 23
+            },
+            "size": {
+                "x": 1,
+                "y": 9
+            }
+        },
+        {
+            "topLeft": {
+                "x": 19,
+                "y": 25
+            },
+            "size": {
+                "x": 1,
+                "y": 9
+            }
+        },
+        {
+            "topLeft": {
+                "x": 20,
+                "y": 26
+            },
+            "size": {
+                "x": 1,
+                "y": 9
+            }
+        },
+        {
+            "topLeft": {
+                "x": 21,
+                "y": 28
+            },
+            "size": {
+                "x": 1,
+                "y": 9
+            }
+        },
+        {
+            "topLeft": {
+                "x": 22,
+                "y": 29
+            },
+            "size": {
+                "x": 1,
+                "y": 9
+            }
+        },
+        {
+            "topLeft": {
+                "x": 23,
+                "y": 31
+            },
+            "size": {
+                "x": 1,
+                "y": 9
+            }
+        },
+        {
+            "topLeft": {
+                "x": 24,
+                "y": 10
+            },
+            "size": {
+                "x": 4,
+                "y": 30
+            }
+        },
+        {
+            "topLeft": {
+                "x": 34,
+                "y": 10
+            },
+            "size": {
+                "x": 4,
+                "y": 30
+            }
+        },
+        {
+            "topLeft": {
+                "x": 38,
+                "y": 10
+            },
+            "size": {
+                "x": 12,
+                "y": 5
+            }
+        },
+        {
+            "topLeft": {
+                "x": 50,
+                "y": 11
+            },
+            "size": {
+                "x": 1,
+                "y": 5
+            }
+        },
+        {
+            "topLeft": {
+                "x": 38,
+                "y": 24
+            },
+            "size": {
+                "x": 10,
+                "y": 4
+            }
+        },
+        {
+            "topLeft": {
+                "x": 48,
+                "y": 23
+            },
+            "size": {
+                "x": 2,
+                "y": 5
+            }
+        },
+        {
+            "topLeft": {
+                "x": 50,
+                "y": 22
+            },
+            "size": {
+                "x": 1,
+                "y": 6
+            }
+        },
+        {
+            "topLeft": {
+                "x": 51,
+                "y": 11
+            },
+            "size": {
+                "x": 2,
+                "y": 16
+            }
+        },
+        {
+            "topLeft": {
+                "x": 53,
+                "y": 12
+            },
+            "size": {
+                "x": 1,
+                "y": 14
+            }
+        },
+        {
+            "topLeft": {
+                "x": 54,
+                "y": 13
+            },
+            "size": {
+                "x": 1,
+                "y": 12
+            }
+        },
+        {
+            "topLeft": {
+                "x": 55,
+                "y": 14
+            },
+            "size": {
+                "x": 1,
+                "y": 10
+            }
+        },
+        {
+            "topLeft": {
+                "x": 60,
+                "y": 19
+            },
+            "size": {
+                "x": 1,
+                "y": 4
+            }
+        },
+        {
+            "topLeft": {
+                "x": 61,
+                "y": 16
+            },
+            "size": {
+                "x": 1,
+                "y": 10
+            }
+        },
+        {
+            "topLeft": {
+                "x": 62,
+                "y": 15
+            },
+            "size": {
+                "x": 1,
+                "y": 12
+            }
+        },
+        {
+            "topLeft": {
+                "x": 63,
+                "y": 14
+            },
+            "size": {
+                "x": 1,
+                "y": 14
+            }
+        },
+        {
+            "topLeft": {
+                "x": 64,
+                "y": 13
+            },
+            "size": {
+                "x": 2,
+                "y": 16
+            }
+        },
+        {
+            "topLeft": {
+                "x": 66,
+                "y": 12
+            },
+            "size": {
+                "x": 2,
+                "y": 18
+            }
+        },
+        {
+            "topLeft": {
+                "x": 68,
+                "y": 12
+            },
+            "size": {
+                "x": 3,
+                "y": 19
+            }
+        },
+        {
+            "topLeft": {
+                "x": 71,
+                "y": 12
+            },
+            "size": {
+                "x": 1,
+                "y": 20
+            }
+        },
+        {
+            "topLeft": {
+                "x": 72,
+                "y": 13
+            },
+            "size": {
+                "x": 1,
+                "y": 19
+            }
+        },
+        {
+            "topLeft": {
+                "x": 73,
+                "y": 13
+            },
+            "size": {
+                "x": 1,
+                "y": 20
+            }
+        },
+        {
+            "topLeft": {
+                "x": 74,
+                "y": 14
+            },
+            "size": {
+                "x": 1,
+                "y": 20
+            }
+        },
+        {
+            "topLeft": {
+                "x": 75,
+                "y": 15
+            },
+            "size": {
+                "x": 1,
+                "y": 20
+            }
+        },
+        {
+            "topLeft": {
+                "x": 76,
+                "y": 16
+            },
+            "size": {
+                "x": 1,
+                "y": 20
+            }
+        },
+        {
+            "topLeft": {
+                "x": 77,
+                "y": 17
+            },
+            "size": {
+                "x": 2,
+                "y": 20
+            }
+        },
+        {
+            "topLeft": {
+                "x": 79,
+                "y": 15
+            },
+            "size": {
+                "x": 1,
+                "y": 20
+            }
+        },
+        {
+            "topLeft": {
+                "x": 80,
+                "y": 14
+            },
+            "size": {
+                "x": 1,
+                "y": 20
+            }
+        },
+        {
+            "topLeft": {
+                "x": 81,
+                "y": 13
+            },
+            "size": {
+                "x": 2,
+                "y": 20
+            }
+        },
+        {
+            "topLeft": {
+                "x": 83,
+                "y": 12
+            },
+            "size": {
+                "x": 1,
+                "y": 20
+            }
+        },
+        {
+            "topLeft": {
+                "x": 84,
+                "y": 12
+            },
+            "size": {
+                "x": 3,
+                "y": 19
+            }
+        },
+        {
+            "topLeft": {
+                "x": 87,
+                "y": 12
+            },
+            "size": {
+                "x": 3,
+                "y": 18
+            }
+        },
+        {
+            "topLeft": {
+                "x": 90,
+                "y": 13
+            },
+            "size": {
+                "x": 1,
+                "y": 16
+            }
+        },
+        {
+            "topLeft": {
+                "x": 91,
+                "y": 14
+            },
+            "size": {
+                "x": 1,
+                "y": 15
+            }
+        },
+        {
+            "topLeft": {
+                "x": 92,
+                "y": 14
+            },
+            "size": {
+                "x": 1,
+                "y": 14
+            }
+        },
+        {
+            "topLeft": {
+                "x": 93,
+                "y": 15
+            },
+            "size": {
+                "x": 1,
+                "y": 12
+            }
+        },
+        {
+            "topLeft": {
+                "x": 94,
+                "y": 17
+            },
+            "size": {
+                "x": 1,
+                "y": 8
+            }
+        }
+    ],
+    "statQueries": {
+        "grid": {
+            "area": {
+                "topLeft": {
+                    "x": 0,
+                    "y": 0
+                },
+                "size": {
+                    "x": 100,
+                    "y": 50
+                }
+            }
+        }
+    },
+    "trace": true,
+    "population": [
+        {
+            "name": "Felix",
+            "pos": {
+                "x": 28,
+                "y": 5
+            },
+            "rngState": "sdsJvYsdJnIL6Nf66dAshCAJ6cQRDW9PI0mvHiO5rFI=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "N"
+        },
+        {
+            "name": "Gregory",
+            "pos": {
+                "x": 12,
+                "y": 31
+            },
+            "rngState": "5BXkxywoWTO4fTfuMQDuXX5Ju4Lr/EWUjP5L9iWYSOA=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "E"
+        },
+        {
+            "name": "Holger",
+            "pos": {
+                "x": 60,
+                "y": 28
+            },
+            "rngState": "axNeQ3/vjfGdVI1O+HkJvCVDH28H4j1QGTTGvn6Phvo=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "S"
+        },
+        {
+            "name": "Jannis",
+            "pos": {
+                "x": 9,
+                "y": 5
+            },
+            "rngState": "fEbDIu+To6thidBR6nZfUvy6xhsdSSTtHYlk3fLc+lc=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "W"
+        },
+        {
+            "name": "Johanna",
+            "pos": {
+                "x": 12,
+                "y": 36
+            },
+            "rngState": "Y5KhkJew6DQtFxbTs0/GRpFgnRwehXvGbeefn1x75uU=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "NE"
+        },
+        {
+            "name": "Julia",
+            "pos": {
+                "x": 58,
+                "y": 47
+            },
+            "rngState": "pIX38+hMn2u3OELeD8v2uRi1b+PCtf6J8/vagNB9mLc=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "NW"
+        },
+        {
+            "name": "Lena",
+            "pos": {
+                "x": 47,
+                "y": 1
+            },
+            "rngState": "hqUDeoYd/6paPlvnm8QNjE9wmw65GCoqe8D1xdrdMRs=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "SE"
+        },
+        {
+            "name": "Maximilian",
+            "pos": {
+                "x": 43,
+                "y": 18
+            },
+            "rngState": "+VRiGBRAaDucAosgV/bY7IqWb1avKd5387yKbB36p6c=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "SW"
+        },
+        {
+            "name": "Philippe",
+            "pos": {
+                "x": 57,
+                "y": 41
+            },
+            "rngState": "FXVidZnqmT2U9VQzXHnnHGgLM330r2LPKGOJgwQ348k=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "X"
+        },
+        {
+            "name": "Simon",
+            "pos": {
+                "x": 2,
+                "y": 4
+            },
+            "rngState": "b3wX5tBUbzbW4DPkXkrU03iMwb+FfaOE6RCVyAiLagM=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "N"
+        },
+        {
+            "name": "Student0",
+            "pos": {
+                "x": 72,
+                "y": 8
+            },
+            "rngState": "7F8LPJsPGNGxCPTX9XV1D8vt2/jFnDPzfIyN/2tbGr0=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "E"
+        },
+        {
+            "name": "Student1",
+            "pos": {
+                "x": 62,
+                "y": 45
+            },
+            "rngState": "e+v/OYJBLYvb2Pys9UMLX8hIW/LnRwS3lfOVH/r0h6A=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "S"
+        },
+        {
+            "name": "Student2",
+            "pos": {
+                "x": 18,
+                "y": 38
+            },
+            "rngState": "XTE1RE1rSZ1dpbTSVY0KvxYNBYSQLcYcY1kd9AwSujI=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "W"
+        },
+        {
+            "name": "Student3",
+            "pos": {
+                "x": 2,
+                "y": 8
+            },
+            "rngState": "jv3Ttz0JaaZkAiof3rQ1Lfs2al3D7SGbKJ6cb4RhvRk=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "NE"
+        },
+        {
+            "name": "Student4",
+            "pos": {
+                "x": 19,
+                "y": 35
+            },
+            "rngState": "3twp7nikNCHKLFityarEZpfhegzbTRbXYPYJBVe2Lu4=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "NE"
+        },
+        {
+            "name": "Student5",
+            "pos": {
+                "x": 35,
+                "y": 41
+            },
+            "rngState": "ctLtS/umnMQrL/vMihuGrUk0hJcm5VRalyQ+ShaRGR4=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "SE"
+        },
+        {
+            "name": "Student6",
+            "pos": {
+                "x": 60,
+                "y": 2
+            },
+            "rngState": "mZ7ORpCGou7PE5i1zjKRxWOrWOXFI327b84VUrIBO48=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "SW"
+        },
+        {
+            "name": "Student7",
+            "pos": {
+                "x": 90,
+                "y": 6
+            },
+            "rngState": "+tNyvXyyogpgicp79EPRGwfvEoNUymaTsYaGErjqsTg=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "X"
+        },
+        {
+            "name": "Student8",
+            "pos": {
+                "x": 24,
+                "y": 1
+            },
+            "rngState": "VPrMnui/2moKJ3myoma/RPriCkN+vqGNavbZXX9B5wE=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "N"
+        },
+        {
+            "name": "Student9",
+            "pos": {
+                "x": 55,
+                "y": 40
+            },
+            "rngState": "MyOkwF3W5+EzPwzONRcnCCDGO0thimitSOrh/VKQC2k=",
+            "infectionState": {
+                "type": "healthy"
+            },
+            "direction": "E"
+        },
+        {
+            "name": "Zombie0",
+            "pos": {
+                "x": 94,
+                "y": 36
+            },
+            "rngState": "JzFcqMKBVfZr3K+kHo0fBPE3mgNXzZWuXrSDB0Pkh2E=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "E"
+        },
+        {
+            "name": "Zombie1",
+            "pos": {
+                "x": 54,
+                "y": 7
+            },
+            "rngState": "pIluTbqhGhSkUr9U76g3apRbSDX9XXBuTMmO97wANq8=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "S"
+        },
+        {
+            "name": "Zombie2",
+            "pos": {
+                "x": 77,
+                "y": 4
+            },
+            "rngState": "xQv3FIEDd2RjEtQIX/gcdxKLggSZualXIXCoNWJVNL8=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "W"
+        },
+        {
+            "name": "Zombie3",
+            "pos": {
+                "x": 92,
+                "y": 33
+            },
+            "rngState": "liXEy7PXgqTFTm+OslI7aHg5akNTE+nWBxnoNcZj+5U=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "NE"
+        },
+        {
+            "name": "Zombie4",
+            "pos": {
+                "x": 58,
+                "y": 4
+            },
+            "rngState": "7rW/HGtF0HZNLHpslSD24xCFrrzUisF267og6/NpIbg=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "NE"
+        },
+        {
+            "name": "Zombie5",
+            "pos": {
+                "x": 98,
+                "y": 49
+            },
+            "rngState": "q03KC1MjCd9fyNi7aWuDi3OnfGzJl0SFsqWxacsPRbI=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "SE"
+        },
+        {
+            "name": "Zombie6",
+            "pos": {
+                "x": 89,
+                "y": 43
+            },
+            "rngState": "VQvZpFBoz3xYtqnwtlr2qqY7t7GqERlO/NXV3r1XBmw=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "SW"
+        },
+        {
+            "name": "Zombie7",
+            "pos": {
+                "x": 44,
+                "y": 40
+            },
+            "rngState": "+Ue6asxL3IAcTY2x5Wr/1JLFRH25G0FhBhvMiM7JrVg=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "X"
+        },
+        {
+            "name": "Zombie8",
+            "pos": {
+                "x": 17,
+                "y": 48
+            },
+            "rngState": "Y67XPrgznw6DsX4/kawsuVZqc25do0FSZ1nUWWP6cFE=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "N"
+        },
+        {
+            "name": "Zombie9",
+            "pos": {
+                "x": 66,
+                "y": 45
+            },
+            "rngState": "hw9Fc6vG6lZWwByy5sPvjK+L8uLzzDO0cwfHC/APcv0=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "E"
+        },
+        {
+            "name": "Zombie10",
+            "pos": {
+                "x": 32,
+                "y": 22
+            },
+            "rngState": "XgLFHwaTHpWtySeWf4yS/bAmowc3u8JDxS6Loz/f468=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "E"
+        },
+        {
+            "name": "Zombie11",
+            "pos": {
+                "x": 23,
+                "y": 21
+            },
+            "rngState": "1kqGFp3gAVhRSUc+lv7RGHuXe9bXSb9r6OYpdTgWHDA=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "S"
+        },
+        {
+            "name": "Zombie12",
+            "pos": {
+                "x": 59,
+                "y": 27
+            },
+            "rngState": "licbukz5Ra7HqqyrPewqLg8ApuXWLh0TbfsQY3fxp5k=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "W"
+        },
+        {
+            "name": "Zombie13",
+            "pos": {
+                "x": 16,
+                "y": 6
+            },
+            "rngState": "I300GqABdGawihtOidh10gtZBGtxCDex31dtXGvMUsY=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "NE"
+        },
+        {
+            "name": "Zombie14",
+            "pos": {
+                "x": 0,
+                "y": 15
+            },
+            "rngState": "NK1lq4El3ND0gIUxSIZygne1I6xMYCUBgsTEt2gzuKg=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "NE"
+        },
+        {
+            "name": "Zombie15",
+            "pos": {
+                "x": 97,
+                "y": 44
+            },
+            "rngState": "AVbYZin0SALZPj5Ty9i7PhyBvtmRyUXdQdUG2boWExU=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "SE"
+        },
+        {
+            "name": "Zombie16",
+            "pos": {
+                "x": 59,
+                "y": 41
+            },
+            "rngState": "q+lGcvejMzm6Cyp61UNKFIjCPvhJTadKHj6DPgDtwus=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "SW"
+        },
+        {
+            "name": "Zombie17",
+            "pos": {
+                "x": 28,
+                "y": 23
+            },
+            "rngState": "3HhNWDYWB/nINQzKVSoJwuyMRCC3ojNjEp8UfAgpYlI=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "X"
+        },
+        {
+            "name": "Zombie18",
+            "pos": {
+                "x": 50,
+                "y": 17
+            },
+            "rngState": "i+sQzQaAyx4KKyB5wlMa9cM11zgheGiF3iM+VLiJxI4=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "N"
+        },
+        {
+            "name": "Zombie19",
+            "pos": {
+                "x": 19,
+                "y": 10
+            },
+            "rngState": "xIO57LMD0wNOh5cfN0OWxD1vrScgh4UN2EBhgxwHxGc=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "E"
+        }
+    ]
+}

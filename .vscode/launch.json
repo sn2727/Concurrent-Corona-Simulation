@@ -1,0 +1,54 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "java",
+            "name": "We ♥ NP (Slug)",
+            "request": "launch",
+            "mainClass": "com.pseuco.np20.Simulator",
+            "projectName": "concurrent-pandemic-simulation",
+            "args": "-scenario scenarios/we_love_np.json -out out/we_love_np.result.json"
+        },
+        {
+            "type": "java",
+            "name": "We ♥ NP (Rocket)",
+            "request": "launch",
+            "mainClass": "com.pseuco.np20.Simulator",
+            "projectName": "concurrent-pandemic-simulation",
+            "args": "-scenario scenarios/we_love_np.json -out out/we_love_np.result.json0 -rocket"
+        },
+        {
+            "type": "java",
+            "name": "Run medium scenario",
+            "request": "launch",
+            "mainClass": "com.pseuco.np20.Simulator",
+            "projectName": "concurrent-pandemic-simulation",
+            "args": "-scenario scenarios/medium.json -out out/medium.result.json0 -rocket"
+        },
+        {
+            "type": "java",
+            "name": "Run small scenario",
+            "request": "launch",
+            "mainClass": "com.pseuco.np20.Simulator",
+            "projectName": "concurrent-pandemic-simulation",
+            "args": "-scenario scenarios/small.json -out out/small.result.json0 -rocket"
+        },
+        {
+            "type": "java",
+            "name": "Run very large scenario (ROCKET)",
+            "request": "launch",
+            "mainClass": "com.pseuco.np20.Simulator",
+            "projectName": "concurrent-pandemic-simulation",
+            "args": "-scenario scenarios/VeryLarge.json -out out/VeryLarge.result.json0 -rocket"
+        },
+        {
+            "type": "java",
+            "name": "Run very large scenario (SLUG)",
+            "request": "launch",
+            "mainClass": "com.pseuco.np20.Simulator",
+            "projectName": "concurrent-pandemic-simulation",
+            "args": "-scenario scenarios/VeryLarge.json -out out/VeryLarge.result.json0 "
+        }
+    ]
+}

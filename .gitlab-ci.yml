@@ -1,0 +1,18 @@
+image: openjdk:14
+
+build:
+  stage: build
+  script:
+    - ./gradlew jar
+  artifacts:
+    paths:
+      - out/simulator.jar
+
+test:
+  allow_failure: true
+  stage: test
+  script:
+    - ./gradlew test
+  artifacts:
+    reports:
+      junit: build/test-results/test/**/TEST-*.xml

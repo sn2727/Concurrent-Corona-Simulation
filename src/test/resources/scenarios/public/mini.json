@@ -1,0 +1,110 @@
+{
+    "name": "Minimal Example",
+    "parameters": {
+        "coughThreshold": 20,
+        "breathThreshold": 150,
+        "accelerationDivisor": 20,
+        "recoveryTime": 140,
+        "infectionRadius": 3,
+        "incubationTime": 3
+    },
+    "ticks": 100,
+    "gridSize": {
+        "x": 10,
+        "y": 5
+    },
+    "partition": {
+        "x": [],
+        "y": []
+    },
+    "obstacles": [
+        {
+            "topLeft": {
+                "x": 0,
+                "y": 0
+            },
+            "size": {
+                "x": 4,
+                "y": 2
+            }
+        },
+        {
+            "topLeft": {
+                "x": 8,
+                "y": 2
+            },
+            "size": {
+                "x": 2,
+                "y": 3
+            }
+        }
+    ],
+    "statQueries": {
+        "saarland": {
+            "area": {
+                "topLeft": {
+                    "x": 0,
+                    "y": 0
+                },
+                "size": {
+                    "x": 10,
+                    "y": 5
+                }
+            }
+        },
+        "dudweiler": {
+            "area": {
+                "topLeft": {
+                    "x": 0,
+                    "y": 2
+                },
+                "size": {
+                    "x": 3,
+                    "y": 3
+                }
+            }
+        }
+    },
+    "trace": true,
+    "population": [
+        {
+            "name": "Gregory",
+            "pos": {
+                "x": 1,
+                "y": 3
+            },
+            "rngState": "XCO/hlxwogh7AO3sSSCPzWh19bTPlBtXoEw62AZR6R8=",
+            "infectionState": {
+                "type": "healthy",
+                "since": 0
+            },
+            "direction": "X"
+        },
+        {
+            "name": "Felix",
+            "pos": {
+                "x": 5,
+                "y": 3
+            },
+            "rngState": "Twz3t21Ro54ajVrnmn+ABHE7ghFX7MN4v0CILhV34dI=",
+            "infectionState": {
+                "type": "infected",
+                "since": 1
+            },
+            "direction": "X"
+        },
+        {
+            "name": "Maxi",
+            "pos": {
+                "x": 4,
+                "y": 4
+            },
+            "rngState": "JpaRpPGve+iR1Msy4WWqxv3AeLdX+S4ePjW74pSlgjE=",
+            "infectionState": {
+                "type": "healthy",
+                "since": 0
+            },
+            "direction": "X"
+        }
+    ]
+}

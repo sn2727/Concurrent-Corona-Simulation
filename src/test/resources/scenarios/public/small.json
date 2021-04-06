@@ -1,0 +1,103 @@
+{
+    "name": "Small Size",
+    "gridSize": {
+        "x": 20,
+        "y": 10
+    },
+    "partition": {
+        "x": [],
+        "y": []
+    },
+    "parameters": {
+        "coughThreshold": 20,
+        "breathThreshold": 150,
+        "accelerationDivisor": 20,
+        "recoveryTime": 140,
+        "infectionRadius": 5,
+        "incubationTime": 10
+    },
+    "ticks": 100,
+    "obstacles": [],
+    "statQueries": {},
+    "trace": true,
+    "population": [
+        {
+            "name": "Minion #0001",
+            "pos": {
+                "x": 10,
+                "y": 0
+            },
+            "rngState": "ehjo7iY1ryhbgPSgTRTQ/UTV0C9weNS8+mrwvRvLPw4=",
+            "infectionState": {
+                "type": "infected",
+                "since": 0
+            },
+            "direction": "X"
+        },
+        {
+            "name": "Minion #0002",
+            "pos": {
+                "x": 18,
+                "y": 2
+            },
+            "rngState": "CBYJ6qLeCFK/lbvtZseZ3LNC3LQlwBhHy/WhXhv3fCw=",
+            "infectionState": {
+                "type": "healthy",
+                "since": 0
+            },
+            "direction": "X"
+        },
+        {
+            "name": "Minion #0003",
+            "pos": {
+                "x": 1,
+                "y": 8
+            },
+            "rngState": "b7OmO+szgLLB4p7RgN/nTrOED8CwpTwWjYnyCtHzS7A=",
+            "infectionState": {
+                "type": "healthy",
+                "since": 0
+            },
+            "direction": "X"
+        },
+        {
+            "name": "Minion #0004",
+            "pos": {
+                "x": 1,
+                "y": 9
+            },
+            "rngState": "6qOK8ysPawpCn0epfE7OBfGtwL3jC4BsrHXIc7Zx6ac=",
+            "infectionState": {
+                "type": "healthy",
+                "since": 0
+            },
+            "direction": "X"
+        },
+        {
+            "name": "Minion #0005",
+            "pos": {
+                "x": 2,
+                "y": 7
+            },
+            "rngState": "OpU66/nL5nHvtTX56dxMnpqxF4SwIMh0NQdjc/AzOrM=",
+            "infectionState": {
+                "type": "healthy",
+                "since": 0
+            },
+            "direction": "X"
+        },
+        {
+            "name": "Minion #0006",
+            "pos": {
+                "x": 3,
+                "y": 1
+            },
+            "rngState": "0INvsQBylyzVcCuoZMyrKwtx5YPnNHFzJRZw7TaSgD8=",
+            "infectionState": {
+                "type": "healthy",
+                "since": 0
+            },
+            "direction": "X"
+        }
+    ]
+}

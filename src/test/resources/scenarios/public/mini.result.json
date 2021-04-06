@@ -1,0 +1,5675 @@
+{
+    "scenario": {
+        "name": "Minimal Example",
+        "parameters": {
+            "coughThreshold": 20,
+            "breathThreshold": 150,
+            "accelerationDivisor": 20,
+            "recoveryTime": 140,
+            "infectionRadius": 3,
+            "incubationTime": 3
+        },
+        "ticks": 100,
+        "gridSize": {
+            "x": 10,
+            "y": 5
+        },
+        "partition": {
+            "x": [],
+            "y": []
+        },
+        "obstacles": [
+            {
+                "topLeft": {
+                    "x": 0,
+                    "y": 0
+                },
+                "size": {
+                    "x": 4,
+                    "y": 2
+                }
+            },
+            {
+                "topLeft": {
+                    "x": 8,
+                    "y": 2
+                },
+                "size": {
+                    "x": 2,
+                    "y": 3
+                }
+            }
+        ],
+        "statQueries": {
+            "saarland": {
+                "area": {
+                    "topLeft": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "size": {
+                        "x": 10,
+                        "y": 5
+                    }
+                }
+            },
+            "dudweiler": {
+                "area": {
+                    "topLeft": {
+                        "x": 0,
+                        "y": 2
+                    },
+                    "size": {
+                        "x": 3,
+                        "y": 3
+                    }
+                }
+            }
+        },
+        "trace": true,
+        "population": [
+            {
+                "name": "Gregory",
+                "pos": {
+                    "x": 1,
+                    "y": 3
+                },
+                "rngState": "XCO/hlxwogh7AO3sSSCPzWh19bTPlBtXoEw62AZR6R8=",
+                "infectionState": {
+                    "type": "healthy",
+                    "since": 0
+                },
+                "direction": "X"
+            },
+            {
+                "name": "Felix",
+                "pos": {
+                    "x": 5,
+                    "y": 3
+                },
+                "rngState": "Twz3t21Ro54ajVrnmn+ABHE7ghFX7MN4v0CILhV34dI=",
+                "infectionState": {
+                    "type": "infected",
+                    "since": 1
+                },
+                "direction": "X"
+            },
+            {
+                "name": "Maxi",
+                "pos": {
+                    "x": 4,
+                    "y": 4
+                },
+                "rngState": "JpaRpPGve+iR1Msy4WWqxv3AeLdX+S4ePjW74pSlgjE=",
+                "infectionState": {
+                    "type": "healthy",
+                    "since": 0
+                },
+                "direction": "X"
+            }
+        ]
+    },
+    "trace": [
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "rngState": "XCO/hlxwogh7AO3sSSCPzWh19bTPlBtXoEw62AZR6R8=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 0
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 5,
+                        "y": 3
+                    },
+                    "rngState": "Twz3t21Ro54ajVrnmn+ABHE7ghFX7MN4v0CILhV34dI=",
+                    "infectionState": {
+                        "type": "infected",
+                        "since": 1
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 4,
+                        "y": 4
+                    },
+                    "rngState": "JpaRpPGve+iR1Msy4WWqxv3AeLdX+S4ePjW74pSlgjE=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 0
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "rngState": "Y3rN6f/XUlHe0BGacfRz4wTChL0nbgtQMQCELSqPWNc=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 1
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 5,
+                        "y": 2
+                    },
+                    "rngState": "c64JFKxM5n8nQmEPAxXAXa1Veuw5BRy7z1hnZQ6+KWk=",
+                    "infectionState": {
+                        "type": "infected",
+                        "since": 2
+                    },
+                    "direction": "N"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 4,
+                        "y": 4
+                    },
+                    "rngState": "OrCRWh6NPW0kIZG37m3/iQAOKxId6RDEshu4WO/Kjsw=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 1
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "rngState": "FNzxstepkvmIKf9rlC7yrZedIdCEFGaga+cRuNRe7/o=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 2
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 5,
+                        "y": 1
+                    },
+                    "rngState": "Rziz2csWcjTIuRdpPEg4c9OdvPm/JRe3vPbmEMrP25k=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 0
+                    },
+                    "direction": "N"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 3,
+                        "y": 3
+                    },
+                    "rngState": "6kNw/JuNK2fXM5BJ4AWQF9RoyHu7K03wm3U15aMqun8=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 2
+                    },
+                    "direction": "NW"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "rngState": "LtavRuX+4hTZmqws6QEuSh8SpvVvUs58uNuau4OCtak=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 3
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 6,
+                        "y": 1
+                    },
+                    "rngState": "7ZJ98eHDoGUrz86CNZa0Bs0ZewnFCsZ7UX/IsjSPkw4=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 1
+                    },
+                    "direction": "E"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "LQO0J1bAHRKCzYY7Nooik/1EfmQVUFpcCSIoV3chg8s=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 3
+                    },
+                    "direction": "NW"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "MQ6HmGm3/zmAgl7zlMLlWq9uiB7yUFFpoIGj1wBhB/0=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 4
+                    },
+                    "direction": "SE"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 6,
+                        "y": 1
+                    },
+                    "rngState": "3RRG9WgiMY7nvpr2R5eS7LCWdUYKho26gmLlEEXpqNc=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 2
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "kNSuXvM88Mfiiia5W57LrMgc7l0usvHuun856sghiCQ=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 4
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "zi9qw2DlGD3aHaoaXDUcq+VFBQqzBMjdyuiIzf28TQI=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 5
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 6,
+                        "y": 0
+                    },
+                    "rngState": "WdsNGCztxr27t9xyAsbxD71QBbhqsI0fYVB4dJGU21E=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 3
+                    },
+                    "direction": "N"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "cObpCf08ysuXsDMHIALJd9grSvIUcppE1x5J0okZM28=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 5
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 3
+                    },
+                    "rngState": "BMAB2dpoVTXo30uhTtULDCaRmrjw2x3reE2XsufYx10=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 6
+                    },
+                    "direction": "N"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 6,
+                        "y": 0
+                    },
+                    "rngState": "IRjxhzlbKDVS1H38PEoIHVMj/On7p0lxbayUocpJj8k=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 4
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 1,
+                        "y": 2
+                    },
+                    "rngState": "7upHC05A9pDfSaQBJJHkpdvc+XGMm6dGTMmTuNwmNL0=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 6
+                    },
+                    "direction": "W"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "v/qjuTXvZB97XBiiNXJFBqGrS9761tAHK1eMTZUARn0=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 7
+                    },
+                    "direction": "N"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 6,
+                        "y": 0
+                    },
+                    "rngState": "UPjzjLJMy+cttDkssbt1LGzA4Sc9HhxG/40vkqF++wo=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 5
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 2
+                    },
+                    "rngState": "J7L47eFfiDBeFchw9Y5cuEgOWtpi8E3sjE1eAvEQrMY=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 7
+                    },
+                    "direction": "W"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "mz6j/YmsLUEJF7YxwnPWylnGb1RjnvmNNknH8HzOBfg=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 8
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 5,
+                        "y": 0
+                    },
+                    "rngState": "6IA83ydabs5c0juo7cM1Q8LICIlblpuholCb+t8ZG0M=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 6
+                    },
+                    "direction": "W"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 2
+                    },
+                    "rngState": "lwusHAv60kJGd/MXPiBuUpnVGUe6fE3pxqVZEHjJc4c=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 8
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "IZPU5pt+8S2vQFE/XMZ0wU7q/ggzg0ACF6tMBeFiRyw=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 9
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 4,
+                        "y": 0
+                    },
+                    "rngState": "UxtGN2Xv0nHNEDPSznNHkLJ9H3vXPMZM49oXTCi2TJ0=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 7
+                    },
+                    "direction": "W"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 2
+                    },
+                    "rngState": "JCY84H2owFTwAE1qrUC98FbzuxgpYlpvvQWDR2NyCtA=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 9
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 3
+                    },
+                    "rngState": "k78vW99xkj3FSI1JC79SEJR2gPR3cd8uHUnpi3bpYUc=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 10
+                    },
+                    "direction": "S"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 4,
+                        "y": 0
+                    },
+                    "rngState": "vjRqf7gHR36Ou5WGgeVzUHow6bI/LhQI49D7yl4v6SU=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 8
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 2
+                    },
+                    "rngState": "LLOY4wg2WK1/ttS02znjmgppXQXTmHMzYydxcuAau+c=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 10
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 3,
+                        "y": 4
+                    },
+                    "rngState": "Z3t+u9WkVOIMuAdnDLjnvVcYRy4z07NIFAfgKsF0mQw=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 11
+                    },
+                    "direction": "SE"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 4,
+                        "y": 0
+                    },
+                    "rngState": "tv5omMLTLojfvcAoONIVF4vDt1LI2Ev1+j65mcsWrJ4=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 9
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 3
+                    },
+                    "rngState": "dQwwbUBLZckVnpQMU5jKroz5c/5D8sHKkR6Il82UZ98=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 11
+                    },
+                    "direction": "S"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 3,
+                        "y": 4
+                    },
+                    "rngState": "7p++1r7uTzbGajD93UUGCcG5y+Y2CdKbtG5MoETFEig=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 12
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 4,
+                        "y": 0
+                    },
+                    "rngState": "rOIO5+wyb8ZvO9A67P6NiFf6gw+L0BeNr17zRS0pLsA=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 10
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "rngState": "MpBjpgQ80SJD/R6K00l3Wzqy69u/cm+sw4Ur9OykCig=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 12
+                    },
+                    "direction": "E"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 3,
+                        "y": 4
+                    },
+                    "rngState": "GUSZmE0xMLS53VXvF1IlZ83Hq2VZKqk/M6AsyYa2BpE=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 13
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 5,
+                        "y": 1
+                    },
+                    "rngState": "UTmD3q4S+BCXsul4/Axwk/T2eMfLQh3b0oBOpa/g6so=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 11
+                    },
+                    "direction": "SE"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 2,
+                        "y": 3
+                    },
+                    "rngState": "qK3N4wWUxUEyFNC7EeG5r7uIn5dPXjavBkEtvN71tXQ=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 13
+                    },
+                    "direction": "E"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 3,
+                        "y": 4
+                    },
+                    "rngState": "FC3yfjwb+GsXqKDTSbDXSjjfJBqeq10wpo1EYe8cD3s=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 14
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 6,
+                        "y": 2
+                    },
+                    "rngState": "7M/5la45n2uItgkA6QFmrPHJuCKyX6zvMAnL7QeBX3s=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 12
+                    },
+                    "direction": "SE"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 3,
+                        "y": 2
+                    },
+                    "rngState": "BZsFYg4t1LSV4qAD84tuPj0vVOANd8lqC9hKGICew/A=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 14
+                    },
+                    "direction": "NE"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 3
+                    },
+                    "rngState": "jklbI93A/JKhZzOfesST53wdWtq9zcbOBRj9j1B+r20=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 15
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 6,
+                        "y": 2
+                    },
+                    "rngState": "5oNsiR/HJBQJSUpsjMZBq5Lludgm9o8Cq2TR5kx9+vc=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 13
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 4,
+                        "y": 1
+                    },
+                    "rngState": "iaAd6CYNIs3hDL6naD9Hwg3dWc1wRkbXNDfi6Nwgoow=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 15
+                    },
+                    "direction": "NE"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 5,
+                        "y": 2
+                    },
+                    "rngState": "y9zAVfwBKSzeypowQwlawOcc1ulxSA3KwiKQ8FKrJDk=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 16
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 6,
+                        "y": 2
+                    },
+                    "rngState": "2rD/5rfcqOL/Dlit0gRrdA/LOo+xq0dkyQbckH8KwF4=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 14
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 5,
+                        "y": 0
+                    },
+                    "rngState": "69SkxvYfmOUmuwLKSfyCIhk62zZ3QmWx1Y9YC6sJBzw=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 16
+                    },
+                    "direction": "NE"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 5,
+                        "y": 2
+                    },
+                    "rngState": "mrKL4mw7q2NqrQcgEBWCrtxQStramDNI2cxt8CXIhbE=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 17
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 5,
+                        "y": 3
+                    },
+                    "rngState": "oRCOj4GnngY1/GzD/R9P7hP9D2QovNsKrcdqfYoj2j0=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 15
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 5,
+                        "y": 0
+                    },
+                    "rngState": "rJXz7S8dMDrDqE/SEtP14rsbmHNKjVZ6YzCxLwxTr98=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 17
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 5,
+                        "y": 2
+                    },
+                    "rngState": "KRPOTJf8YD1Xeeq6f+o5wf+HQRvvKHKz2fd3VxhDfRs=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 18
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 4,
+                        "y": 4
+                    },
+                    "rngState": "M+7e7usFcYWSOlG0WcBS+KBJlqo5MotWvtGOTOrDafA=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 16
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 5,
+                        "y": 0
+                    },
+                    "rngState": "ieqxBpXHMRAXRAg9DB3V9yQ04GW+JBTDxCKHwhR1fas=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 18
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 6,
+                        "y": 2
+                    },
+                    "rngState": "hAcmBPRJj261Sw5Fmaf7XdGJ/YLNSyc6AcWY2pnR6/w=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 19
+                    },
+                    "direction": "E"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 4,
+                        "y": 4
+                    },
+                    "rngState": "8/Ni5dmVJVMxVoF92qLiCM3WTOyagpqrQ1HEc9Dyi8o=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 17
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 6,
+                        "y": 0
+                    },
+                    "rngState": "ju0dh6ykYkLLQR/EqXMKhCRLsrgttxmZCgp27mhFJ+M=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 19
+                    },
+                    "direction": "E"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 7,
+                        "y": 1
+                    },
+                    "rngState": "LNIEMl+lh17SIAPkh0ESYx8D4PMow8SCXVjUaeRb3a8=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 20
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 5,
+                        "y": 3
+                    },
+                    "rngState": "8SdV1OzAdxzqXto2STzoaY+HIm4MMu+sRhMJHNXaa4A=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 18
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 7,
+                        "y": 0
+                    },
+                    "rngState": "wb6pw4XdU5CAat9qfeCCvAEIkx0gnGic+EMn9FrSSjI=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 20
+                    },
+                    "direction": "E"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 8,
+                        "y": 0
+                    },
+                    "rngState": "yZ7vG3bRnWYGXr+ruaxpg7EAfjigOAfE20fduh7+9AU=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 21
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 5,
+                        "y": 2
+                    },
+                    "rngState": "rbtoMbGsTPs2sUxAKjYWMTmmtZA9posHeMYVBh/UNVY=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 19
+                    },
+                    "direction": "N"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 7,
+                        "y": 0
+                    },
+                    "rngState": "41vv6uNtVdsst/DgNhfgViOivsT0PzYLVSk7ZIEe0pE=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 21
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 8,
+                        "y": 0
+                    },
+                    "rngState": "ptbhi8tlvT0IrNOxS45ZE/i8eRf2e0aClfEyrrkl5rU=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 22
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 6,
+                        "y": 1
+                    },
+                    "rngState": "FBBYeb+IIe6TuOZceAUFBiXir0SWSKSQrsOp3otT3gg=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 20
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 7,
+                        "y": 0
+                    },
+                    "rngState": "sC25GNmAsG0eYewWWX7clFqV8CqEclEpfJOt1fhG74Q=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 22
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 8,
+                        "y": 0
+                    },
+                    "rngState": "s7lxdrKvgyZwNB0YQpmomupFHimpURNgZ8S0KC9y4+o=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 23
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 6,
+                        "y": 1
+                    },
+                    "rngState": "G6whmmY8Y4kP69lWKgLpYa0pyFjQZSIXAUgt8giGkLI=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 21
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 8,
+                        "y": 1
+                    },
+                    "rngState": "tB58QyNCuzR9aJ64zYhufFsZTo12Vfa7njow4nGgnHs=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 23
+                    },
+                    "direction": "SE"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 8,
+                        "y": 0
+                    },
+                    "rngState": "3pz+brW16Hx8prM9ab6AHQC1LK1jWrTkMm161DgaUa8=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 24
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 7,
+                        "y": 2
+                    },
+                    "rngState": "nCiJeXpgOWSXtGX77tc32yB4jUu0hJ3dRy7AStWoNSU=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 22
+                    },
+                    "direction": "SE"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 8,
+                        "y": 1
+                    },
+                    "rngState": "U2Ik9vp6Hw0ZgH5RrWZ/jEC3pSllZ5hH6AoGMp89Y+M=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 24
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 7,
+                        "y": 0
+                    },
+                    "rngState": "lUpPT2MJOUOeTVaVrAxuO8TDDqusjU0HdoBHwcfcvpo=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 25
+                    },
+                    "direction": "W"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 7,
+                        "y": 2
+                    },
+                    "rngState": "sz0baTjw527oUpp8ufLwyg+lklm+Qdgzkfzv3K1cn0s=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 23
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 8,
+                        "y": 1
+                    },
+                    "rngState": "yZ6mPWU4HWqiQxKCapqkyWgM9S5tpV9CvNKA+Omces8=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 25
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 7,
+                        "y": 0
+                    },
+                    "rngState": "uUUPrUria2zPbbzAOtzMkaSmbs+EMMtb2oX0VU7cBFs=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 26
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 6,
+                        "y": 3
+                    },
+                    "rngState": "uUSP4D35pjapJtDuUt2PRDf9L63YPvHPgChiT1+Q3Go=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 24
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 9,
+                        "y": 0
+                    },
+                    "rngState": "Ff1hOG+n1nUEAupxMXkYEnbf9G3XNwNCoWq9TN4WSYQ=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 26
+                    },
+                    "direction": "NE"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 7,
+                        "y": 0
+                    },
+                    "rngState": "+lPF7/JORhhNVwH/zccZXCpxazfokIccTsXL4Ot/MA8=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 27
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 5,
+                        "y": 3
+                    },
+                    "rngState": "DzMJd3kac2syq8w241C1c2tflZe1rbNyrlFkZrsIBY8=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 25
+                    },
+                    "direction": "W"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 9,
+                        "y": 0
+                    },
+                    "rngState": "PHDoEoI3Fqe26D7Au4Vaq6f5VZLZ4xKXElGYZkdriC8=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 27
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 7,
+                        "y": 0
+                    },
+                    "rngState": "HEfjzzB9cMIsfEP1ZbdzOtWgldWcoBXxicg119NlwRE=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 28
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 5,
+                        "y": 3
+                    },
+                    "rngState": "IbMeXSg4a1GE1KFV3W6j6O47Ea3iLpN8eC3Zg772QoM=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 26
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 9,
+                        "y": 0
+                    },
+                    "rngState": "hxzdvO/rayiBYGhhZxG0ugAOS9nh/W1hUGaR/CxBp4c=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 28
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 7,
+                        "y": 0
+                    },
+                    "rngState": "823qBc5M/gaak/JDOPb6v+punFM00gr4XHtilQSQrIQ=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 29
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 4,
+                        "y": 3
+                    },
+                    "rngState": "RBlK087u3UK7Qk8SKJehKT3KD6nnGq8a/0emoXBW3+c=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 27
+                    },
+                    "direction": "W"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 9,
+                        "y": 0
+                    },
+                    "rngState": "aYKg9ic4qyTcOcHktmKFv+JMQVE/erK/dZSu9ey2pHk=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 29
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 7,
+                        "y": 0
+                    },
+                    "rngState": "E2gRXmvSeO4dmOwKD2totTwewLZBaa3rq1JKUKjWp1E=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 30
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 4,
+                        "y": 4
+                    },
+                    "rngState": "bil+e+kojQZ5eaDvFGZlm1vDowDk8d33MGI0BpIpjTA=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 28
+                    },
+                    "direction": "S"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 9,
+                        "y": 0
+                    },
+                    "rngState": "JrnZq8gveaSNVhBhsKdEihxIOpuO1pKHjgynmbGpzX8=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 30
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 6,
+                        "y": 0
+                    },
+                    "rngState": "PQs9AyEub43Xk8rJusSnybGXpFQgNGYUQqUwiE1dk5A=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 31
+                    },
+                    "direction": "W"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 4,
+                        "y": 4
+                    },
+                    "rngState": "SsLNJTDnrbZya6eBJjx6mRIIpD2uD062mAfTS4FGEWk=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 29
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 9,
+                        "y": 0
+                    },
+                    "rngState": "giAZXbrivPe6lEJoImbbkHziGk3nVQUuQPQB79xhdlw=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 31
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 5,
+                        "y": 1
+                    },
+                    "rngState": "evMsqhFhwM70mRPV9OIdAC4tcOi/9kvMpu/Y/AeeCkA=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 32
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 4,
+                        "y": 4
+                    },
+                    "rngState": "TYuiorNg1MDIELBcSOY+sUpybQ0Yk2hYTEQgFin8oyc=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 30
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 9,
+                        "y": 1
+                    },
+                    "rngState": "FlIus/r37yo0bcV2StHiPfmxwOFfuktv6mAJXKX/Oow=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 32
+                    },
+                    "direction": "S"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 2
+                    },
+                    "rngState": "hKHd+TL3+8FT2AyCQ7cR6e5zKzIvw3LKC7hBkkn5gBM=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 33
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 5,
+                        "y": 3
+                    },
+                    "rngState": "wNJdw8M+KA+cn9kBWdbqPkCu0xQ/BWH7pDQT9c8KYTg=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 31
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 8,
+                        "y": 1
+                    },
+                    "rngState": "1CxswZCiFGSjlswM4M3ex/NNLmfEbZNSP5kFVs/qCE4=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 33
+                    },
+                    "direction": "W"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 3,
+                        "y": 3
+                    },
+                    "rngState": "OgXLzyoUzpvjzivVGzPokNSYVgppyc7dzmG+eLOcq/w=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 34
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 6,
+                        "y": 2
+                    },
+                    "rngState": "suRS9IlXP7hPb7T4Fr+S09jclvoQjFT+6gohYgBnqJQ=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 32
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 8,
+                        "y": 0
+                    },
+                    "rngState": "ArVRYYe+TLc3U2XDu7tuWhX6bB2W5sCDiyUoz9ppXpM=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 34
+                    },
+                    "direction": "N"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "de+Vyvagw7gB9png5XSqaECSrKVgcW2lqJoglbvFCxc=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 35
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 6,
+                        "y": 1
+                    },
+                    "rngState": "FwFN1kzc23y8Evqh7yvrunVssk5e7EBcRRCow1qliLI=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 33
+                    },
+                    "direction": "N"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 7,
+                        "y": 0
+                    },
+                    "rngState": "txqc02Yn3Pa6r/Fo9N4DizGD7NLw03ou6506NPCwBqA=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 35
+                    },
+                    "direction": "W"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "BtrDb7o8Ar4UX9eqbTpO9ptolJ+oMu3lFZ6wJ/7bmOA=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 36
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 5,
+                        "y": 0
+                    },
+                    "rngState": "Q088LaYn22Bj7aGTCiqoh9q7JzGFDUwg6qq9+jGqo34=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 34
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 6,
+                        "y": 0
+                    },
+                    "rngState": "arhADxoXNjbEAujXsZfeE/joPYoDFKESYSD6YW4+3jk=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 36
+                    },
+                    "direction": "W"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "Fnf5cbcPb/8241UWIzS5g2TZrFzca+uLf1a9iGPjhxY=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 37
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 5,
+                        "y": 0
+                    },
+                    "rngState": "fWz5UrAtqZCkh0JtCUfT4WOiImqosUT+g37iLtUDyiw=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 35
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 6,
+                        "y": 0
+                    },
+                    "rngState": "21KuqhxnTKjOv/v7HlwHdIYmPsrkhf1cVZ7psf/5DJA=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 37
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "NqyyHXTxrMzAj7F3k7arjEta4Z/qbgW7zo7s5y6zQVw=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 38
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 6,
+                        "y": 1
+                    },
+                    "rngState": "UK6EuNkdFizDgnxL8ZVHr3PFimoFA67We2cwr52giUw=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 36
+                    },
+                    "direction": "SE"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 6,
+                        "y": 0
+                    },
+                    "rngState": "hUHYURYmV4ynwqqXm/UEpnwfIWJk2Qp3Fldn5VA9/rQ=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 38
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "rngState": "ifdreDQFjVD576RxfduSkD0iBF10aFAet5GFh6/wJ9o=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 39
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 7,
+                        "y": 2
+                    },
+                    "rngState": "vYi1b4EScQIJmmbLzT4frk1TPvMM06xNLkOmnyk1T0A=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 37
+                    },
+                    "direction": "SE"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 7,
+                        "y": 1
+                    },
+                    "rngState": "TON4bSRpz3ss6Tx+o5L10eIuF94BlFZHAjikJT8DBwg=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 39
+                    },
+                    "direction": "SE"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 0,
+                        "y": 2
+                    },
+                    "rngState": "ZbcHwhkOie4cn9+sgr1cLkfp+amx6Lf+hmj/b3zsAOA=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 40
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 7,
+                        "y": 2
+                    },
+                    "rngState": "v4H+fvqSViaiAz3IWGcTaQq6bcS7M3YHl0b9acNHCH4=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 38
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 7,
+                        "y": 1
+                    },
+                    "rngState": "C5u/NkkRAUPo+Lh9TJ/9m4JcllDWuIDJIX16wS+lFyM=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 40
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 0,
+                        "y": 2
+                    },
+                    "rngState": "VnoijohbRoFruMCyeuagE1JNnYDYvMcHxoMOq+dot0w=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 41
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 6,
+                        "y": 3
+                    },
+                    "rngState": "IGWQMrLpoTJCJxiqhJ2w2nG5aXHA2qIx6mkuQuKF1jY=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 39
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 7,
+                        "y": 1
+                    },
+                    "rngState": "YbfgeuMRxqFhasUkw2laHuoYh2jgxmuWsPbKtLOH6Oc=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 41
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 1,
+                        "y": 2
+                    },
+                    "rngState": "OXEXtNFz5rG07WFaxHiLAwUaBpucYJ/rsQbQKjLTjSc=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 42
+                    },
+                    "direction": "E"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 5,
+                        "y": 4
+                    },
+                    "rngState": "n2XdNAjWnJ6jrwA3WgjrvIqmT05gtQiin6VHtsBVZ9I=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 40
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 7,
+                        "y": 1
+                    },
+                    "rngState": "p7vg64vWDNSQYb3TaVPQHYRtXTh2B88R8pGVdEwSXgQ=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 42
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 1,
+                        "y": 2
+                    },
+                    "rngState": "sIY/nyb5ytb5KEOBjyE56sX2S4p28HsmtdCW1P7Pw1M=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 43
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 5,
+                        "y": 4
+                    },
+                    "rngState": "+4etYlIt/7L7tryRSmwNMe0/KrPeHfXJDZPn2ko+u1M=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 41
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 6,
+                        "y": 1
+                    },
+                    "rngState": "13pAy/GOM7RhiCqZD2Qd/BYivRYvjEmBtKHPmEEZ2l0=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 43
+                    },
+                    "direction": "W"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "RIQbV6DrOqHY+qawNvlTHJ4GnStjmCyfG0QnzRsQi4Y=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 44
+                    },
+                    "direction": "E"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 5,
+                        "y": 4
+                    },
+                    "rngState": "Fjb02ZpRqxq+041+4oePmXLTBABej4D58nOgO6c4RCM=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 42
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 5,
+                        "y": 1
+                    },
+                    "rngState": "4yzTb5scK8rXbO7/y6jI0N2OBQPcnE9nkOAkVohBX3s=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 44
+                    },
+                    "direction": "W"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 3,
+                        "y": 2
+                    },
+                    "rngState": "dUOlAz76HiVVC3zvve88pdfKN1KWlAIOh3o+ZE9JZdU=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 45
+                    },
+                    "direction": "E"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 4,
+                        "y": 4
+                    },
+                    "rngState": "RBxL2lCqI7fVZJ0oPUcdLNGS2lYVS1QHoA5KPoVGn3E=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 43
+                    },
+                    "direction": "W"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 4,
+                        "y": 1
+                    },
+                    "rngState": "ASv87zW11CV8farHVFPNKbBNw8+6BTikQR3tMC0GJ4g=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 45
+                    },
+                    "direction": "W"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 3,
+                        "y": 3
+                    },
+                    "rngState": "4eaStQ/fVjgELZ6h0c1wdBIxohi3jgq/MaBuB9tp6aU=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 46
+                    },
+                    "direction": "S"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 3,
+                        "y": 4
+                    },
+                    "rngState": "JFlO4dQbYupw6UJBLvyc/0fbwRcBHzKk32gWHTyYvFM=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 44
+                    },
+                    "direction": "W"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 4,
+                        "y": 0
+                    },
+                    "rngState": "CRZQxYGP/9FQlvtSMv1hseKtmxzLoce3wbRWmugtXlI=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 46
+                    },
+                    "direction": "N"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 4
+                    },
+                    "rngState": "XHIi9etUS4CIL1nhuK82Sco1jgtGaNwUvYRuxhqI1Ts=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 47
+                    },
+                    "direction": "SE"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 2,
+                        "y": 3
+                    },
+                    "rngState": "kC1kzT/kgTmKKoZ7dzn+Apw6Rie5HTv4P06X240KaDc=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 45
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 4,
+                        "y": 0
+                    },
+                    "rngState": "4J0+CVLoHbgLZtYK0cLcCmtATil1xFsV2pI72dRunGE=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 47
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 4
+                    },
+                    "rngState": "0YW6bXVDLutPgKvVNggVzsq+LdyfItvKXDc6UeQ427A=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 48
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "NZhijRR38b13R1uoEUNi0bSWyygGaw78MQEdwyACLQo=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 46
+                    },
+                    "direction": "N"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 4,
+                        "y": 0
+                    },
+                    "rngState": "2Y5WRqfIKppJ/Nzjus4wjT0mej/7dcfk4BO+DyGMbHY=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 48
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 4
+                    },
+                    "rngState": "9IPkXbJvJgc8XzlOwz9NeDwgOBShiN7PnAd5MuRZ6kI=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 49
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 1,
+                        "y": 2
+                    },
+                    "rngState": "+LePzS/OJnY2fhmUOoxGFGLMyba8PnDDD6rzpTiae3I=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 47
+                    },
+                    "direction": "W"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 4,
+                        "y": 1
+                    },
+                    "rngState": "5Qcu77bzK3vzezAli82KtZOGKJ3jH8VFT4eHBfFWwUk=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 49
+                    },
+                    "direction": "S"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 3,
+                        "y": 4
+                    },
+                    "rngState": "1XlEDBF/RpgNiOJw9Ol+RNMnGOOwU0+CLzExm5Mi2p4=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 50
+                    },
+                    "direction": "W"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 0,
+                        "y": 3
+                    },
+                    "rngState": "pC41w3TJBxnkz00Ar8nhrewYrUpZ/rrplhNRnlkwpWE=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 48
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 4,
+                        "y": 1
+                    },
+                    "rngState": "AhdxmQkiJDfTvyHYWgztxXe7YI4HvUH27jnJ25EcxV8=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 50
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 3
+                    },
+                    "rngState": "g9MRi2tlXDbn9XXuiKM+I9x6OgnEXbZ/+Dq+UkC7I9k=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 51
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 0,
+                        "y": 3
+                    },
+                    "rngState": "SMi7GkMUJpaBsU6EgsRIqZobpqXgoPBVHqJDcIW1+7g=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 49
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 5,
+                        "y": 2
+                    },
+                    "rngState": "3QZ8qQq9mDKd8NYPMyYSzC0+RNVKLlsDbWdwFgsY9xU=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 51
+                    },
+                    "direction": "SE"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "rngState": "sEsxG8PKcMSRkjyeIz6WX6X+8qZqbKi/fJDJs33KQrY=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 52
+                    },
+                    "direction": "W"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 0,
+                        "y": 3
+                    },
+                    "rngState": "ZdaiGqcE0hZxDVG5SIZlnMEUnSG+I4oxlIB7ArTfO6o=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 50
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 5,
+                        "y": 2
+                    },
+                    "rngState": "X+Bpn3B1PqH4xvWRFNgaHLqzGmZ9VJK4UVk42tCIYoc=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 52
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "rngState": "/rEhTHpP98gqsN1qmJpoNBuiwGILhhW0X86LztnMXAc=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 53
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 0,
+                        "y": 3
+                    },
+                    "rngState": "43vGGxeJvpUUWqSzARy+q8JSooFdtNYNkgEy4TriK4A=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 51
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 4,
+                        "y": 1
+                    },
+                    "rngState": "Wf9ljY7cPG80eKi2bm1wtw9xZ9+4CzQEJnMhRYr6Rmk=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 53
+                    },
+                    "direction": "NW"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 3
+                    },
+                    "rngState": "nzwe28aREUWCudSEAYa5t10SKUFhSdXLeI4FQzb5TWo=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 54
+                    },
+                    "direction": "E"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 0,
+                        "y": 3
+                    },
+                    "rngState": "O/CuWMGddyl1xdiBPpWF7SKNLkU+6BouhUrzz47d5b0=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 52
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 4,
+                        "y": 1
+                    },
+                    "rngState": "1qPu7v8H47nQIT8kZTnKdbq5/2p93ecG9e/4YqWKhrQ=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 54
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "bMaczhRMoi5X+KVb2UH4GurWXDWzzfcnDbWHZqODCrw=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 55
+                    },
+                    "direction": "S"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 0,
+                        "y": 3
+                    },
+                    "rngState": "/i7NL0enUyNSTR+V/2QCxnAN3CigIUB3ms1pFNkvOOQ=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 53
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 3,
+                        "y": 2
+                    },
+                    "rngState": "GCubbApcwuDOTII14fBr1xDFVZ+bMPoe/09/7gpnmwA=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 55
+                    },
+                    "direction": "SW"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "lLkpvMQT2Qc9b3sR2ubmbjTPIryGLaYKMKsCHyRH9wU=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 56
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 1,
+                        "y": 4
+                    },
+                    "rngState": "NhSAub5ePcm6XYPuKAxQ3hHTlwGQJ2iSewqanx5Zaac=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 54
+                    },
+                    "direction": "SE"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 2,
+                        "y": 3
+                    },
+                    "rngState": "0Qi5+H+QuDNXy+yYxUl5VsV956R/+M0+Plpv4eyAkXc=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 56
+                    },
+                    "direction": "SW"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "qOPBaBBxh3A8lO84QOa/9k0NqUvPJUt/qokDOEOful0=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 57
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 1,
+                        "y": 4
+                    },
+                    "rngState": "Nrp03zBbp8C2YXVPOGgsmL2nLgvCXNBFl1gvZnYXni0=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 55
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 2,
+                        "y": 3
+                    },
+                    "rngState": "IsE63zErpBhOtMOinQmxm3Y0cRK1zvrIuLfXvPel/mQ=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 57
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "vYXrdHL0dtNCIgMPbO+fduOE72ODF5zVUe6ER/2e9cg=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 58
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 1,
+                        "y": 4
+                    },
+                    "rngState": "9crbsLuEDBPMV8SUnmypKYiBjBmbjcYQhAM1GEOleCE=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 56
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 2,
+                        "y": 3
+                    },
+                    "rngState": "mG6jWlFJRdKFMnshu8F+pM5K6vn7xGMiadKWM5sxRko=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 58
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "a6uw3xmxnHqnEavDgZxwpipzxxMFUuN7WEEAdnQ5J3A=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 59
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 1,
+                        "y": 4
+                    },
+                    "rngState": "Nn68MlQtiaZr5J6uRVWrIU9orU/ZCleFxjvX/ptIgj8=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 57
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 3,
+                        "y": 4
+                    },
+                    "rngState": "SuiH0uy//Jgh8CGEnoW+j47YTgSOLzJgZ/MaQuQScNE=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 59
+                    },
+                    "direction": "SE"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "kUzmMNZpeC85qWpEWbaZyHGe+zr2uAafZDABJMNAv2E=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 60
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 0,
+                        "y": 4
+                    },
+                    "rngState": "nMJNKIdibXnryr81+fTpmsHim2+9WdXFSHigdgRxMU0=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 58
+                    },
+                    "direction": "W"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 3,
+                        "y": 4
+                    },
+                    "rngState": "0dHofv9TtaG64EIoEsKs6DDVdVyrOrEvwJUHn+iYKLM=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 60
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "bNi/BrUKmfKbZhXTbqDT62USpX5HFwyFY1bNqcUSmxg=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 61
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 0,
+                        "y": 4
+                    },
+                    "rngState": "hRdLKtVM/0weltS0SkQulM/MzZ+2Gxe9176Dzbmo4Sc=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 59
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 3,
+                        "y": 4
+                    },
+                    "rngState": "yY2pDKP04PRLUQXqMF5X3687qF9sedyJfW1GmJjfnEs=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 61
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 3
+                    },
+                    "rngState": "r6UNVvOCEaA6yaEUwOIjZ2H11pvzO71TiPWPYM/MDBk=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 62
+                    },
+                    "direction": "N"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "rngState": "qKhfszaoq1vJQ+qZLbp3tv76OvXaO0702aAQVRC8P+8=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 60
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 3,
+                        "y": 4
+                    },
+                    "rngState": "3L/6sFkKz8Vr5sKOE5K+Aahgw8e+deHwAZIoVp54GaY=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 62
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "rInLyxHLnTznibKziGBLLIwVJWuwezGJuh1SZN2WJzo=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 63
+                    },
+                    "direction": "N"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "rngState": "VsTdSRp1Aa0mcn5vaw4vsfqPKosCLd9TxT6kPt0GZ7M=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 61
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 3,
+                        "y": 4
+                    },
+                    "rngState": "rpPJIjWJyIBcdhnbWcK1zQAg26KoKjyz/sFaMnonYZo=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 63
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "xuwEPu+K21QstNWVhCw4Mu5zECv8EAkM7WZ9V9/31SM=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 64
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 0,
+                        "y": 4
+                    },
+                    "rngState": "AomeCbL7Mlggrp0JLddEquWQe7qJKbESj0EsbjjqlY8=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 62
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 3,
+                        "y": 4
+                    },
+                    "rngState": "e/ifMLu6eyoj3giae8lYMvpJ83oV/W0zFckk8I/Zc7c=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 64
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "ocDWUvcjCMCBxMMi4YxtOYAnSCkD44gCzpogsOgJM00=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 65
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 0,
+                        "y": 4
+                    },
+                    "rngState": "uqDeRXnFF0/R387IDpg17tjqOoNZIW1lJikbUtPQ5Yw=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 63
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 3,
+                        "y": 4
+                    },
+                    "rngState": "etL22kaEp+Jlz//WCX//v8zh/1tA5gLvXqrbaXSIS4U=",
+                    "infectionState": {
+                        "type": "healthy",
+                        "since": 65
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 3
+                    },
+                    "rngState": "Zzs5z3hfj+WzSzEmK4zHKSyUd/9n6wpxezTNxlGgia8=",
+                    "infectionState": {
+                        "type": "infected",
+                        "since": 0
+                    },
+                    "direction": "S"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "rngState": "A81ZQHeFVS/Az+gGEmqV4tT8rfgQZDiiFWsfeJUp/s0=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 64
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 3,
+                        "y": 4
+                    },
+                    "rngState": "oGwrOcCoUt0LI56C3r6671FOWT84wR57IbOPc8iDc7Q=",
+                    "infectionState": {
+                        "type": "infected",
+                        "since": 0
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 1,
+                        "y": 4
+                    },
+                    "rngState": "Ick89VpXz+da5kpdlrsjJA9q4USj0T/LPFso33HGOGE=",
+                    "infectionState": {
+                        "type": "infected",
+                        "since": 1
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "ek7H3qpQ+ChZvSzZ25rYXvPgKG2vUu4K6UyHmDogS5o=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 65
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 3,
+                        "y": 4
+                    },
+                    "rngState": "pjx5KPBjSK1s6WAznVfPRkD1E52LNWiXl6GyyiNVy6Q=",
+                    "infectionState": {
+                        "type": "infected",
+                        "since": 1
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 1,
+                        "y": 4
+                    },
+                    "rngState": "AoxbPjbr8+kyK8ao2ODtXR3fQWOKsYS6cn1+/hmqlrY=",
+                    "infectionState": {
+                        "type": "infected",
+                        "since": 2
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "RNO6gkMn+mrdYVjbAsqY2emkZ/TSAfZLSDGKLdwxreI=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 66
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 3,
+                        "y": 4
+                    },
+                    "rngState": "UdcvtiDrspwJY94AyjvKzlLnuHpbaJZKR6nZXqsU7hw=",
+                    "infectionState": {
+                        "type": "infected",
+                        "since": 2
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 1,
+                        "y": 4
+                    },
+                    "rngState": "Au30UPFFCQD0puZD3aJR5oeyCupkRXNgaqJJcd4LW1M=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 0
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "ZKa0GFC3+YXqDSfnAfuHth6PvL8cRTQAgHkGXkbRF58=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 67
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "3aFIig57OQsS8wTzL5kv4q0C7huZGQLvemfEJgDh1tc=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 0
+                    },
+                    "direction": "W"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 1,
+                        "y": 4
+                    },
+                    "rngState": "s9f6PqB9qaplTwFftaLLHHhPdvm2CqAybv01M9VO/xo=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 1
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "AY6qpc4J5QpiJpi4B4jBAxq13INO5VkPhUYriagYvSc=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 68
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "6GWNbBNAoihl6Vi0RzIEktcs51Z4pB8XiXdLeFALvlQ=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 1
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 3
+                    },
+                    "rngState": "zytR8y9VSJ0SBy9jsm2ahC8Lunfp+ZTU5MbSutI58nI=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 2
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "F9TmS/Hqk7bcECskvksOR7LJoZ0SDvH77LM5C4+3Cx8=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 69
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "rngState": "9CFqTpKVLnn3oZaXER3Kt7kYwqNgZWs3m3T886ajP1g=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 2
+                    },
+                    "direction": "NW"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 3,
+                        "y": 3
+                    },
+                    "rngState": "bdJ9aizzBzvkIVQ6etF18vMUzqslkd54TCbTMJ6u+10=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 3
+                    },
+                    "direction": "E"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "seTiwLFAjJiAfeQVIfrIiXXlQtvai9Y4/d7J6lPjcI4=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 70
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "rngState": "eCaJGZb4Xp6L2wpjxXV9IfOJhEZXcEavOBrb45UHaVc=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 3
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 3
+                    },
+                    "rngState": "UJsisY6xzzNZH9Rq0UPtX+eVYcm2b0ER/BjOImsdgq8=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 4
+                    },
+                    "direction": "E"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "y/gQMe5hqvlfIwTS/owRXCT9ZovNpbBPLgmSI/oXKjI=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 71
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "rngState": "0pHb+JErGkB+Nv7HgozLBQ/YR3kAk41t+/bBemGnMDY=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 4
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 5,
+                        "y": 4
+                    },
+                    "rngState": "py4pb9rY8Q5tx7NOLCtAsoCV4+FlbQ0btv471Qvd5eE=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 5
+                    },
+                    "direction": "SE"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 2,
+                        "y": 3
+                    },
+                    "rngState": "mgozTWkf14EKCp90vFhiadJsaVpNjzxJmx0yfwzn3H0=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 72
+                    },
+                    "direction": "S"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 2
+                    },
+                    "rngState": "rZZuUXBSz0+QH0eKrvM60VPijLCefUZvByiOcPhidxk=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 5
+                    },
+                    "direction": "NW"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 6,
+                        "y": 4
+                    },
+                    "rngState": "Is8RS2CATxuS0CuO0dGZfreh6/dp0Ym5ae9coWpyqMk=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 6
+                    },
+                    "direction": "E"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "oAkyirVM7eAS0mTf96m2FV5cASz9O9v+fwx6vVIi4PY=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 73
+                    },
+                    "direction": "S"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 2
+                    },
+                    "rngState": "zQgSIrMBjj6M8MWRRZw9jB3QvEvuH4f1wDN6EHkx+1Q=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 6
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 6,
+                        "y": 4
+                    },
+                    "rngState": "jnV+obTWzvjHqbwboge/+XQ0Qt46NLmP0+VXth4hW7A=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 7
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "Trimbup4vWS9kH7z25uLk2n9eDmaP5KdxrsNonDpIxE=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 74
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 2
+                    },
+                    "rngState": "nEHk0TT7fuJKPVT1BAlVPYjW17CURlOWLzbaz0FoFbo=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 7
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 6,
+                        "y": 4
+                    },
+                    "rngState": "IUmvTv1PB9SuZluftDDLd6Rb8Je9LjBhNKrp0Y/CKjM=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 8
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "R4yoEn8qEUGAkx081XdeX6U/S8UZMDH/I5i+LPX0JN4=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 75
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 2
+                    },
+                    "rngState": "euT5uo73zcilXXnrWod87RBKiIGBUWtSTDEW97S3U94=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 8
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 5,
+                        "y": 3
+                    },
+                    "rngState": "cdBubyoAGBlViRPcI0wbDj6u4y+HJFKAI989xqBLxGI=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 9
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "hd7AcaMOPE3yHMF5Xd50NtI6auige9spoMxSvMhU3aA=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 76
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 2
+                    },
+                    "rngState": "CrsBl2UgG+HGtfZYIDUcxZwlALsa3bQWgjd4PjGKRuY=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 9
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 2
+                    },
+                    "rngState": "P1i1IUZvJ6lU/7Q+vgWSft/NKY+1LNhdt2791RWymmw=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 10
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 2,
+                        "y": 4
+                    },
+                    "rngState": "7M42pXbcq+8D8G4TBdC6GKeI/+DetV6EcSHf6C9K/58=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 77
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 2
+                    },
+                    "rngState": "QH8L6nPDCyJlXhnu1Qlb55NpMUvYIHIaqbWUIB+1LWE=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 10
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 2
+                    },
+                    "rngState": "oRmhpCess0W8ef5fyw7b5ezgprZ6FXN4+QuUOGkViXA=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 11
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 2,
+                        "y": 3
+                    },
+                    "rngState": "32cSHbLD99l3rKm3zHV4Q46JihMMpXpmuXj/efEaYfQ=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 78
+                    },
+                    "direction": "N"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 3
+                    },
+                    "rngState": "Kxwvkrvja45yUyf/ihX7DSeNWkyj48SAqA3F0OPMhSU=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 11
+                    },
+                    "direction": "S"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 2
+                    },
+                    "rngState": "/I2+HHfFuXj8Zfn9xHysXHWC56S3zIEDkP/W7Hofgds=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 12
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 1,
+                        "y": 2
+                    },
+                    "rngState": "ATdEIZnVWznT751BcZCEdnEWBPrVkMo9vagJxQnj/RQ=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 79
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 3
+                    },
+                    "rngState": "8w0O7dRJrv16hLBiiLLxRLv4WMzYqOxllqGwc3iI/oU=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 12
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 1
+                    },
+                    "rngState": "jHcRVXL+/cWNER63YlNbPb1G73CoNsL+7qzEfa5End0=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 13
+                    },
+                    "direction": "N"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 1,
+                        "y": 2
+                    },
+                    "rngState": "k1JfqP2ioGQzFJebVllfPnOVNuphkUtSq+6vDNt23bA=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 80
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 3
+                    },
+                    "rngState": "12ii6jiXEwrEF5wWuRJiKGzLtxRTP1eY7Ma5e3uKoDU=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 13
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 0
+                    },
+                    "rngState": "3znA9ffCsLYWP6P4k5xL1X4oo4T3EMwlGkyWDKKLG1U=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 14
+                    },
+                    "direction": "N"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 1,
+                        "y": 2
+                    },
+                    "rngState": "JAxcTBvXmuXyyxxAMiqxT4oWvLAo60yGegsLHPHU/tM=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 81
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 3
+                    },
+                    "rngState": "fDNJOFJr0tSW1awJtnNfIVP+6QEvvaOwpNYoKxfL0D8=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 14
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 0
+                    },
+                    "rngState": "SzfnhfklX6JS//v+erb/TcXkyOlQudL+2Om1tQNdcCI=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 15
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 1,
+                        "y": 2
+                    },
+                    "rngState": "gwBtax4doeAINYjVryXRR+vK8q+uzvjNQAqPkTIcz7Q=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 82
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 3
+                    },
+                    "rngState": "pcPgcCj0hetRCevhIp1uE+XwS6tsgNmnmj6FlcRdGKY=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 15
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 0
+                    },
+                    "rngState": "bmq0LpdRf71riW3E28yYLcvOrBr9nR0ogZJemajLmKI=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 16
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 1,
+                        "y": 2
+                    },
+                    "rngState": "zy10zGCSJ2yPuJBYgMBLbGLR8sxTjfPh92UdKKMxgQ0=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 83
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 3
+                    },
+                    "rngState": "te5rGsC5p0WYq7MiAVImAXZKw/uuzzeEYSeXYcTjLwQ=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 16
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 0
+                    },
+                    "rngState": "IWpBVOXzoiX9X+uXqHjpLt/z6rnLlwL6hKGzrMGqH6k=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 17
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 1,
+                        "y": 2
+                    },
+                    "rngState": "FghqIhkEn2A+I3T3eAwjmeHbjau+pQ41ncnv0DRX+GE=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 84
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 3
+                    },
+                    "rngState": "5YPBoEAmxHga3uUyszbr9jGB7HHYzQcgITcgVx+BLXM=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 17
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 0
+                    },
+                    "rngState": "ScGYy9/yba8fvfLw6mYYzvTjiyxuA/dAt7GcftaEbWk=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 18
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 1,
+                        "y": 2
+                    },
+                    "rngState": "O5KYXXBaQPdDfH9gvE7a+mbLAb40C3BF/L203pWlgbM=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 85
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 3
+                    },
+                    "rngState": "6e1Dd4PzutHWxqcIUxSsQiXX1wbXohjmq/ugZHHXdKI=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 18
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 0
+                    },
+                    "rngState": "6wv0V0Vj9zCkQMoaBBjH7Ffhz/ogjDApvsJdpstFWyU=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 19
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 0,
+                        "y": 2
+                    },
+                    "rngState": "KBRKPXaXIu6/cpkYmG/Z/QmHMscqZ4j7Ew+Bdnog4Do=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 86
+                    },
+                    "direction": "W"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 4
+                    },
+                    "rngState": "6UU5ggV/C2yGEmlD62lEEr69jfKPyS8Hfm9Nqta+0Ak=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 19
+                    },
+                    "direction": "S"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 1
+                    },
+                    "rngState": "Tm4vgeVwmw4fCbokmsvYJo5Fw5CIazteHV7AfpYK1yE=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 20
+                    },
+                    "direction": "S"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 0,
+                        "y": 2
+                    },
+                    "rngState": "5FZIS2DMHbeWyUIDvskkCKffxGFFgsiCfO/aBFumGGg=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 87
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 4
+                    },
+                    "rngState": "CHz7Nf6Plr3HduLFs7RdKj20wWXrMScXFxq5dW3gVZo=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 20
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 5,
+                        "y": 2
+                    },
+                    "rngState": "g8simhZZIhD5FBEm+pLO5odYJIM3/ZWm2m/M1Dj+roI=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 21
+                    },
+                    "direction": "SE"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 1,
+                        "y": 2
+                    },
+                    "rngState": "u5Ib2SD8eNYLkqoIzGXAQwHYSZGKOycoA879aBwLev8=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 88
+                    },
+                    "direction": "E"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 4
+                    },
+                    "rngState": "8G3s0e5acrUNiqXOzDsqtE4YLDY8c6FSEWu7VRNZgEU=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 21
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 5,
+                        "y": 2
+                    },
+                    "rngState": "Wb1yRmvYGe/2gFbhHJ1j4k2l0j4H3HslNWAz4bT4HWU=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 22
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "IrXCmmKg77johBeB5qvm4Qpicr82ZNFg2dqSpeOjU8g=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 89
+                    },
+                    "direction": "E"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 4
+                    },
+                    "rngState": "T/B/ZltYsJTG8LmW5sk/ly3axNyWaCBrsZcUQeUp3Ug=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 22
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 5,
+                        "y": 2
+                    },
+                    "rngState": "0lbBhQYOza6Vlo0bTNtxkgbuSYZDoXf3L0WfKbvRb2k=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 23
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 3,
+                        "y": 3
+                    },
+                    "rngState": "GYSJP0r36kmyNypK3E2NwxlO7EcFV4Ttj22VtvGBw3k=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 90
+                    },
+                    "direction": "SE"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 4
+                    },
+                    "rngState": "KbfYkJexE7Yp5t+HTvmkkVAvVLrUF+LNRVOgMuydSsE=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 23
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 4,
+                        "y": 2
+                    },
+                    "rngState": "t8lP4NmTiTySFJDp780v+YXx+Ko1TWneP3MHR1l51gY=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 24
+                    },
+                    "direction": "W"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 4,
+                        "y": 3
+                    },
+                    "rngState": "fDVbIVbUku4x+nSUClySKh9nbSxESQMMuzttrM5QIzI=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 91
+                    },
+                    "direction": "E"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 1,
+                        "y": 4
+                    },
+                    "rngState": "ckIXc5mLnYv6UHbg0cPi0q+9CtFI4iJNdvMnr5GPdXM=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 24
+                    },
+                    "direction": "E"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 3,
+                        "y": 2
+                    },
+                    "rngState": "mFPNnM3+vXB1RLxbgbLVTYfM8Vz6k/OMVLe8Y+WSHFg=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 25
+                    },
+                    "direction": "W"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 4,
+                        "y": 3
+                    },
+                    "rngState": "uJ4+Eim7AJfFInZX5F9W0wf3+1PrKtHovcuM8OiZ5YE=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 92
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 1,
+                        "y": 4
+                    },
+                    "rngState": "CPAx7ILxRJ0HdqU+5ulCjSvmj/06GwI8OEEMZjwUVK8=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 25
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "zNS37oaKludfgyeG5RwsngnYF0dWYE90s2JVkoQLbkE=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 26
+                    },
+                    "direction": "W"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 4,
+                        "y": 3
+                    },
+                    "rngState": "iobHXInW6JIyQ/5BU2lZqqPNgVIFFS9VqOnzkjWVxHE=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 93
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 1,
+                        "y": 4
+                    },
+                    "rngState": "t+subklpdzgo5txPZ2dLneTU0CT/Lq1aq8oLjGgMfpg=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 26
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "rngState": "1MQqPRzRH7kB5/Px3HrgQsW/IbdVvmPUnoqXfBIDqkA=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 27
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 4,
+                        "y": 3
+                    },
+                    "rngState": "A2LdqDcBPlv1OwdlJdHxFWoAOq/kjk7lGx+DG3cgD3I=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 94
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 4
+                    },
+                    "rngState": "zfc8ufXWupeV2OMHtJEhbod2lVUrBTR/VA316hf/6EU=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 27
+                    },
+                    "direction": "W"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "rngState": "tkE6MJKFUF2bmRkZn+k0Pc9zaxrETlXlUxc/3NyxJss=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 28
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 3,
+                        "y": 2
+                    },
+                    "rngState": "gelycXayrfaV1CwPRP17DO0xkByAivwvqqICSsS767Q=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 95
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 4
+                    },
+                    "rngState": "xtTe76ID3IiwL8MkJt62eto6XTtaS0HZwvVbIS5t35E=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 28
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "6blgz4uDnAqV7S+LbQms87qqdb1VaIEScEgDoAIp8IU=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 29
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 3,
+                        "y": 2
+                    },
+                    "rngState": "1mNzcYpyp7xPYZE3xh86ideij/ESZLoCbF0LQaru2ok=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 96
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 4
+                    },
+                    "rngState": "ODd9sAwgcThfDSQRJhyWbOS3TOGDH47X+Vfuh3qBMBI=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 29
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "ItXtEQAycTUzCdFGYr9Ws4GEYr1BEiGt2ycpUrOw4mo=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 30
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 3,
+                        "y": 2
+                    },
+                    "rngState": "KNCic6cCkZqYQYeqJWutBfiYKUbnbxfY1KQrL6y+6a8=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 97
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 4
+                    },
+                    "rngState": "tbyjFDgHMRlN4XWETTm2tTHQ6JQfgEI6EFSrFLR661A=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 30
+                    },
+                    "direction": "X"
+                }
+            ]
+        },
+        {
+            "population": [
+                {
+                    "name": "Gregory",
+                    "pos": {
+                        "x": 2,
+                        "y": 2
+                    },
+                    "rngState": "z3wZ86LibSzF8Ewsx1e3WUM5IVZpTzlq2oeSE166rWU=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 31
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Felix",
+                    "pos": {
+                        "x": 3,
+                        "y": 2
+                    },
+                    "rngState": "gloFxtMx83nrQ6hJX6G1w7pjqJxz2pH1XL4hAGiXnXE=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 98
+                    },
+                    "direction": "X"
+                },
+                {
+                    "name": "Maxi",
+                    "pos": {
+                        "x": 0,
+                        "y": 4
+                    },
+                    "rngState": "08Z3gbmM2/Q9tNv1l1WtTDhPfKKwEE0Pef1Jmq3mQc4=",
+                    "infectionState": {
+                        "type": "infectious",
+                        "since": 31
+                    },
+                    "direction": "X"
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "saarland": [
+            {
+                "susceptible": 2,
+                "infected": 1,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 1,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 2,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 2,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 2,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            }
+        ],
+        "dudweiler": [
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 0,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 2,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 1,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 1,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 1,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 1,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 3,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 1,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            },
+            {
+                "susceptible": 0,
+                "infected": 0,
+                "infectious": 2,
+                "recovered": 0
+            }
+        ]
+    }
+}
