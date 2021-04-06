@@ -1,6 +1,6 @@
 .gradle
 .idea
-
+.vscode
 build
 bin
 out/*
